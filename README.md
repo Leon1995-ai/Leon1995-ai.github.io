@@ -16,3 +16,7 @@ Upload the entire contents of this folder to the root of `Leon1995-ai.github.io`
 
 English: https://Leon1995-ai.github.io/
 Chinese: https://Leon1995-ai.github.io/zh/
+
+
+## v4.2 typography tuning
+Slightly enlarged English body/publication metadata and separately tuned Chinese body/navigation/publication text for readability while preserving the v4.1 layout.
