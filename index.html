@@ -3,258 +3,428 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b5ea8" />
-  <meta name="description" content="Yue Zhang — Lecturer at Qufu Normal University. Research on integrated space-air-ground-sea networks, edge intelligence, MEC, 6G and digital twins." />
-  <meta name="keywords" content="Yue Zhang, Qufu Normal University, edge intelligence, MEC, 6G, digital twin, maritime IoT, UAV" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Yue Zhang — Lecturer at Qufu Normal University. Research on edge intelligence, integrated networks, MEC, UAV/HAP networking, maritime IoT and digital-twin-assisted resource orchestration." />
+  <meta name="keywords" content="Yue Zhang, Qufu Normal University, edge intelligence, MEC, UAV, HAP, maritime IoT, integrated networks, digital twin, resource allocation" />
   <meta property="og:title" content="Yue Zhang | Academic Homepage" />
-  <meta property="og:description" content="Lecturer at Qufu Normal University. Research on integrated networks, edge intelligence, MEC, 6G and digital twins." />
+  <meta property="og:description" content="Lecturer at Qufu Normal University working on edge intelligence and resource orchestration for heterogeneous wireless networks." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/profile.jpg" />
   <link rel="icon" href="assets/profile.jpg" />
   <link rel="stylesheet" href="style.css" />
   <title>Yue Zhang | Academic Homepage</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yue Zhang",
+    "alternateName": "张跃",
+    "jobTitle": "Lecturer",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Qufu Normal University"
+    },
+    "email": "mailto:zy@qfnu.edu.cn",
+    "sameAs": [
+      "https://orcid.org/0000-0002-8263-3682",
+      "https://xplorestaging.ieee.org/author/37089993164",
+      "https://github.com/Leon1995-ai"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Home">
-      <span class="brand-mark">YZ</span>
-      <span class="brand-name">Yue Zhang</span>
-    </a>
-
-    <nav class="desktop-nav" aria-label="Primary navigation">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Yue Zhang <span>张跃</span></a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+      </nav>
+      <button class="menu-button" id="menuButton" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-      <a href="#service">Service</a>
     </nav>
-
-    <div class="header-actions">
-      <button class="icon-button" id="themeToggle" aria-label="Toggle color theme" title="Toggle theme">
-        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
-        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>
-      </button>
-      <button class="icon-button mobile-only" id="menuOpen" aria-label="Open menu">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
   </header>
 
-  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-    <button class="icon-button menu-close" id="menuClose" aria-label="Close menu">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-    </button>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#experience">Experience</a>
-    <a href="#service">Service</a>
-  </div>
-
   <main id="top">
-    <section class="hero-wrap" aria-labelledby="hero-title">
-      <div class="hero-card">
-        <div class="portrait-wrap">
-          <img class="portrait" src="assets/profile.jpg" alt="Portrait of Yue Zhang" />
-          <span class="status-dot" aria-hidden="true"></span>
+    <section class="hero section-shell">
+      <div class="hero-profile">
+        <img class="portrait" src="assets/profile.jpg" alt="Portrait of Yue Zhang" />
+        <div class="hero-main">
+          <p class="overline">Academic Homepage</p>
+          <h1>Yue Zhang <span class="zh-name">张跃</span></h1>
+          <p class="role">Lecturer, School of Computer Science</p>
+          <p class="institution">Qufu Normal University · Rizhao, Shandong, China</p>
+          <p class="intro">I work on <strong>edge intelligence and resource orchestration</strong> for heterogeneous wireless networks, with emphasis on UAV/HAP-assisted systems, integrated networks, maritime edge computing, and digital-twin-assisted multi-timescale optimization.</p>
+          <div class="link-row">
+            <a class="link-button primary" href="mailto:zy@qfnu.edu.cn">Email</a>
+            <a class="link-button" href="https://orcid.org/0000-0002-8263-3682" target="_blank" rel="noreferrer">ORCID</a>
+            <a class="link-button" href="https://xplorestaging.ieee.org/author/37089993164" target="_blank" rel="noreferrer">IEEE Xplore</a>
+            <a class="link-button" href="https://github.com/Leon1995-ai" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="link-button" href="assets/Yue_Zhang_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
         </div>
+      </div>
 
-        <div class="hero-copy">
-          <div class="hero-kicker">Academic Homepage</div>
-          <h1 id="hero-title">Yue Zhang <span>张跃</span></h1>
-          <p class="hero-role">Lecturer, School of Computer Science</p>
-          <p class="hero-institution">Qufu Normal University</p>
-          <p class="hero-tagline">Edge intelligence for reliable, sustainable and resilient integrated networks.</p>
-          <p class="location-line">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            Rizhao, Shandong, China
-          </p>
-
-          <!--
-            CONTACT LINKS: uncomment the buttons you want and replace the href values.
-            Example:
-            <a class="social-link" href="mailto:your_email@qfnu.edu.cn">Email</a>
-            <a class="social-link" href="https://scholar.google.com/..." target="_blank" rel="noreferrer">Google Scholar</a>
-            <a class="social-link" href="https://orcid.org/..." target="_blank" rel="noreferrer">ORCID</a>
-            <a class="social-link" href="https://github.com/..." target="_blank" rel="noreferrer">GitHub</a>
-            <a class="social-link" href="assets/Yue_Zhang_CV.pdf" target="_blank">CV</a>
-          -->
-        </div>
-
-        <div class="stats-grid" aria-label="Academic statistics">
-          <div class="stat-card"><strong>16+</strong><span>Publications</span></div>
-          <div class="stat-card"><strong>9</strong><span>First-author papers</span></div>
-          <div class="stat-card"><strong>3</strong><span>Patent applications</span></div>
-          <div class="stat-card"><strong>IEEE</strong><span>Journal reviewer</span></div>
-        </div>
+      <div class="metrics" aria-label="Academic summary">
+        <div class="metric"><strong>15</strong><span>Published papers listed</span></div>
+        <div class="metric"><strong>9</strong><span>First-author papers</span></div>
+        <div class="metric"><strong>3</strong><span>Manuscripts under review</span></div>
+        <div class="metric"><strong>2</strong><span>Research projects</span></div>
       </div>
     </section>
 
-    <div class="content-grid">
-      <aside class="sidebar">
-        <div class="sidebar-card sticky-card">
-          <h2 class="sidebar-title">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3Z"/><path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"/></svg>
-            Research Keywords
-          </h2>
-          <div class="tag-cloud">
-            <span>Integrated Space–Air–Ground–Sea Networks</span>
+    <div class="page-grid section-shell">
+      <aside class="side-rail">
+        <section class="side-block">
+          <h2>Research Interests</h2>
+          <div class="chips">
             <span>Edge Intelligence</span>
             <span>Mobile Edge Computing</span>
-            <span>6G ISCC</span>
             <span>UAV / HAP Networks</span>
-            <span>Renewable-Powered MEC</span>
-            <span>Digital Twins</span>
-            <span>AI Service Orchestration</span>
+            <span>Integrated Networks</span>
+            <span>6G ISCC</span>
             <span>Maritime / Island IoT</span>
-            <span>Resource Allocation</span>
+            <span>Digital Twins</span>
+            <span>Resource Orchestration</span>
+            <span>Physical-Layer Security</span>
           </div>
+        </section>
 
-          <div class="sidebar-divider"></div>
-
-          <h2 class="sidebar-title">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/><path d="M8 7h8M8 11h6"/></svg>
-            Representative Venues
-          </h2>
-          <ul class="compact-list">
-            <li>IEEE Transactions on Intelligent Transportation Systems</li>
-            <li>IEEE Internet of Things Journal</li>
-            <li>IEEE Transactions on Vehicular Technology</li>
-            <li>IEEE Wireless Communications Letters</li>
-            <li>Computer Networks</li>
-          </ul>
-        </div>
+        <section class="side-block quick-facts">
+          <h2>Quick Facts</h2>
+          <dl>
+            <div><dt>Position</dt><dd>Lecturer</dd></div>
+            <div><dt>Institution</dt><dd>Qufu Normal University</dd></div>
+            <div><dt>Ph.D.</dt><dd>Dalian Maritime University</dd></div>
+            <div><dt>ORCID</dt><dd>0000-0002-8263-3682</dd></div>
+          </dl>
+        </section>
       </aside>
 
-      <div class="main-column">
-        <section class="section" id="about">
-          <header class="section-heading">
-            <span class="eyebrow">Profile</span>
-            <h2>About Me</h2>
-          </header>
-          <div class="about-card">
-            <p>I am a Lecturer with the School of Computer Science, Qufu Normal University. My research focuses on integrated space–air–ground–sea networks, edge intelligence and mobile edge computing, with particular interest in resource-constrained maritime and remote environments.</p>
-            <p>My recent work studies joint communication, computing and energy management, renewable-powered edge systems, UAV/HAP-assisted networking, 6G integrated sensing–communication–computing–caching, and digital-twin-assisted AI service orchestration.</p>
+      <div class="content">
+        <section class="content-section" id="about">
+          <div class="section-title-row">
+            <p class="section-index">01</p>
+            <h2>About</h2>
+          </div>
+          <div class="prose">
+            <p>I am a Lecturer in the School of Computer Science at Qufu Normal University. My research focuses on edge intelligence and resource orchestration for heterogeneous wireless networks, particularly UAV/HAP-assisted and integrated networks.</p>
+            <p>My current interests include predictive multi-timescale network-service co-design, uncertainty-aware resource orchestration, digital-twin-assisted edge intelligence, and reliable computing in infrastructure-limited or energy-constrained environments.</p>
           </div>
         </section>
 
-        <section class="section" id="research">
-          <header class="section-heading">
-            <span class="eyebrow">Focus</span>
-            <h2>Research Directions</h2>
-          </header>
-          <div class="direction-grid">
-            <article class="direction-card">
-              <span class="direction-number">01</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="m7 12 10-5M7 12l10 5"/></svg>
-              <h3>Integrated Networks</h3>
-              <p>Cross-layer networking and resource orchestration across satellite, aerial, terrestrial and maritime systems.</p>
+        <section class="content-section" id="research">
+          <div class="section-title-row">
+            <p class="section-index">02</p>
+            <h2>Research</h2>
+          </div>
+          <div class="research-grid">
+            <article>
+              <span class="research-label">Networks</span>
+              <h3>Integrated Aerial & Maritime Networks</h3>
+              <p>Resource allocation and service orchestration across HAPs, UAVs, satellites, terrestrial infrastructure, and maritime IoT.</p>
             </article>
-            <article class="direction-card">
-              <span class="direction-number">02</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h8"/></svg>
-              <h3>Edge Intelligence</h3>
-              <p>Communication–computing–energy co-design for reliable edge AI and mission-critical services.</p>
+            <article>
+              <span class="research-label">Edge AI</span>
+              <h3>Edge Intelligence & MEC</h3>
+              <p>Joint communication-computing-caching design, task offloading, service caching, and computation resource management.</p>
             </article>
-            <article class="direction-card">
-              <span class="direction-number">03</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M6 8c0-2 2-4 6-4s6 2 6 4-2 4-6 4-6 2-6 4 2 4 6 4 6-2 6-4"/></svg>
+            <article>
+              <span class="research-label">Reliability</span>
               <h3>Sustainable & Resilient Computing</h3>
-              <p>Renewable-aware scheduling, service continuity and resilience under energy and infrastructure uncertainty.</p>
+              <p>Energy-aware scheduling, renewable-powered edge systems, service continuity, and robustness under uncertain resources.</p>
             </article>
-            <article class="direction-card">
-              <span class="direction-number">04</span>
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4z"/><path d="M8 4v3M16 4v3M8 17v3M16 17v3M8 11h8"/></svg>
-              <h3>Digital Twin Orchestration</h3>
-              <p>Multi-timescale prediction, uncertainty-aware decision making and AI service deployment for dynamic networks.</p>
+            <article>
+              <span class="research-label">Digital Twin</span>
+              <h3>Multi-Timescale Orchestration</h3>
+              <p>Prediction, uncertainty quantification, and digital-twin-assisted service deployment and inference orchestration.</p>
             </article>
           </div>
         </section>
 
-        <section class="section" id="publications">
-          <header class="section-heading">
-            <span class="eyebrow">Research Output</span>
-            <h2>Recent Manuscripts</h2>
-          </header>
-          <div class="publication-list">
-            <article class="publication-card">
-              <div class="paper-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5l-4 8a3 3 0 0 0 2.7 4h8.6A3 3 0 0 0 19 16l-4-8V3"/><path d="M8 12h8M10 3h4"/></svg>
-              </div>
-              <div class="paper-content">
-                <div class="paper-topline">
-                  <h3>Learning-Augmented Online Task–Energy Co-Reconfiguration for Freshness-Aware Maritime Edge Computing</h3>
-                  <span class="status-pill">Submitted manuscript</span>
+        <section class="content-section" id="publications">
+          <div class="section-title-row publications-heading">
+            <div>
+              <p class="section-index">03</p>
+              <h2>Publications</h2>
+            </div>
+            <p class="pub-note"><strong>Yue Zhang</strong> is highlighted.</p>
+          </div>
+
+          <div class="pub-toolbar" role="group" aria-label="Publication filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="journal">Journal</button>
+            <button class="filter" data-filter="conference">Conference</button>
+            <button class="filter" data-filter="review">Under Review</button>
+          </div>
+
+          <div class="pub-group" data-group="journal">
+            <h3 class="pub-group-title">Journal Articles</h3>
+            <ol class="publication-list">
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2026</div>
+                <div class="pub-body">
+                  <h4>Dwell-Time-Constrained Joint Task Offloading and Resource Allocation for Multi-Layer Aerial Vehicular Edge Computing Networks</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Laiwei Jiang, Arumugam Nallanathan, and Xin Liu</p>
+                  <p class="venue"><em>IEEE Transactions on Intelligent Transportation Systems</em>, vol. 27, no. 7, pp. 7805-7819, 2026.</p>
+                  <a class="doi" href="https://doi.org/10.1109/TITS.2026.3692669" target="_blank" rel="noreferrer">DOI</a>
                 </div>
-                <p class="authors">Ze Wei, Yue Zhang, Rongxi He, Bin Lin, Guangshun Li</p>
-                <p class="venue">IEEE Transactions on Mobile Computing</p>
-                <div class="paper-tags"><span>Maritime MEC</span><span>Online Learning</span><span>Energy</span></div>
-              </div>
-            </article>
+              </li>
 
-            <article class="publication-card">
-              <div class="paper-icon">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5l-4 8a3 3 0 0 0 2.7 4h8.6A3 3 0 0 0 19 16l-4-8V3"/><path d="M8 12h8M10 3h4"/></svg>
-              </div>
-              <div class="paper-content">
-                <div class="paper-topline">
-                  <h3>Grid-Certifiable Spatio-Temporal Computing Flexibility for Renewable-Rich Distribution Networks</h3>
-                  <span class="status-pill">Submitted manuscript</span>
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2026</div>
+                <div class="pub-body">
+                  <h4>Multi-UAV Energy Consumption Minimization for Multi-Layer Aerial Wireless Powered MEC: An Online Stochastic Optimization Approach</h4>
+                  <p class="authors">Jialiang Yin, Zhenyu Na, <strong>Yue Zhang</strong>, Bin Lin, et al.</p>
+                  <p class="venue"><em>IEEE Internet of Things Journal</em>, vol. 13, no. 14, pp. 31707-31720, 2026.</p>
+                  <a class="doi" href="https://doi.org/10.1109/JIOT.2026.3687753" target="_blank" rel="noreferrer">DOI</a>
                 </div>
-                <p class="authors">Ze Wei, Yue Zhang, Rongxi He, Bin Lin, Guangshun Li</p>
-                <p class="venue">IEEE Transactions on Software Engineering</p>
-                <div class="paper-tags"><span>Computing Flexibility</span><span>Renewable Energy</span><span>Optimization</span></div>
-              </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Energy Consumption Minimization for Integrated Sensing, Communication, Computing and Caching in Multi-Layer Aerial Internet of Things</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Bin Lin, Yun Lin, and Arumugam Nallanathan</p>
+                  <p class="venue"><em>IEEE Internet of Things Journal</em>, vol. 12, no. 22, pp. 47787-47803, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1109/JIOT.2025.3602793" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Joint Service Caching and Task Offloading for Multi-UAV-Assisted Offshore Edge Computing Networks</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Shiyu Li, Bin Lin, Yun Lin, and Arumugam Nallanathan</p>
+                  <p class="venue"><em>IEEE Transactions on Vehicular Technology</em>, vol. 74, no. 12, pp. 19667-19680, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1109/TVT.2025.3589880" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>One Friendly UAV Against Multiple Mobile Eves in HAP Networks: A Novel Physical Layer Secure Communication Scheme</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Weidang Lu, and Chenglan Ji</p>
+                  <p class="venue"><em>IEEE Transactions on Vehicular Technology</em>, vol. 74, no. 1, pp. 1352-1364, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1109/TVT.2024.3451508" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Secure Task Offloading for Multi-Layer Aerial-Offshore MEC Networks With Imperfect Eavesdropper Information</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Xueqi Du, Yun Lin, and Bin Lin</p>
+                  <p class="venue"><em>IEEE Wireless Communications Letters</em>, vol. 14, no. 11, pp. 3814-3818, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1109/LWC.2025.3606579" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Joint Service Caching, Computation Offloading and Resource Allocation for Dual-Layer Aerial Internet of Things</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Zihao Wen, Arumugam Nallanathan, and Weidang Lu</p>
+                  <p class="venue"><em>Computer Networks</em>, vol. 257, Art. no. 110974, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1016/j.comnet.2024.110974" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Collaborative Task Offloading for LEO Satellite Internet of Things: A Novel Computing Coordinate Graph-Based Approach</h4>
+                  <p class="authors">Xueqi Du, Zhenyu Na, Ningtao Zhang, <strong>Yue Zhang</strong>, et al.</p>
+                  <p class="venue"><em>IEEE Systems Journal</em>, vol. 19, no. 3, pp. 848-859, 2025.</p>
+                  <a class="doi" href="https://doi.org/10.1109/JSYST.2025.3571386" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2025</div>
+                <div class="pub-body">
+                  <h4>Computation Offloading Optimization for Multi-Layer Aerial Internet of Things Based on Deep Recurrent Q-Network</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Hanhan Ren, Xueqi Du, and Lizhe Liu</p>
+                  <p class="venue"><em>Radio Communications Technology</em>, pp. 1-9, 2025. <span class="muted">(in Chinese)</span></p>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2024</div>
+                <div class="pub-body">
+                  <h4>Energy Efficiency Optimization for RIS-Assisted Uplink-NOMA UAV Network</h4>
+                  <p class="authors">Zihao Wen, Zhenyu Na, and <strong>Yue Zhang</strong></p>
+                  <p class="venue"><em>IEEE Wireless Communications Letters</em>, vol. 13, no. 6, pp. 1640-1644, 2024.</p>
+                  <a class="doi" href="https://doi.org/10.1109/LWC.2024.3384676" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2024</div>
+                <div class="pub-body">
+                  <h4>Joint Power Allocation and Deployment Optimization for HAP-Assisted NOMA-MEC System</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Yi Wang, and Chenglan Ji</p>
+                  <p class="venue"><em>Wireless Networks</em>, vol. 30, no. 6, pp. 5007-5019, 2024.</p>
+                  <a class="doi" href="https://doi.org/10.1007/s11276-022-03201-8" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+
+              <li class="publication" data-type="journal">
+                <div class="pub-year">2023</div>
+                <div class="pub-body">
+                  <h4>Multi-UAV-Assisted Covert Communications for Secure Content Delivery in Internet of Things</h4>
+                  <p class="authors">Ye Liu, Zhenyu Na, <strong>Yue Zhang</strong>, Xiaofei Qin, and Bin Lin</p>
+                  <p class="venue"><em>Computer Communications</em>, vol. 210, pp. 138-146, 2023.</p>
+                  <a class="doi" href="https://doi.org/10.1016/j.comcom.2023.08.006" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="pub-group" data-group="conference">
+            <h3 class="pub-group-title">Conference Papers</h3>
+            <ol class="publication-list">
+              <li class="publication" data-type="conference">
+                <div class="pub-year">2024</div>
+                <div class="pub-body">
+                  <h4>Latency Minimization for C-NOMA Based Multi-UAV MEC Systems</h4>
+                  <p class="authors">Jinyu Zhang, Zhenyu Na, <strong>Yue Zhang</strong>, and Shiyu Li</p>
+                  <p class="venue"><em>Proc. IEEE 24th International Conference on Communication Technology (ICCT)</em>, Chengdu, China, pp. 1224-1228, 2024.</p>
+                  <a class="doi" href="https://doi.org/10.1109/ICCT62411.2024.10946569" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+              <li class="publication" data-type="conference">
+                <div class="pub-year">2024</div>
+                <div class="pub-body">
+                  <h4>Latency Minimization of Multi-Layer Aerial Networks for Maritime Collaborative Mobile Edge Computing</h4>
+                  <p class="authors">Shiyu Li, Zhenyu Na, <strong>Yue Zhang</strong>, and Jinyu Zhang</p>
+                  <p class="venue"><em>Proc. IEEE 24th International Conference on Communication Technology (ICCT)</em>, Chengdu, China, pp. 202-206, 2024.</p>
+                  <a class="doi" href="https://doi.org/10.1109/ICCT62411.2024.10946538" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+              <li class="publication" data-type="conference">
+                <div class="pub-year">2023</div>
+                <div class="pub-body">
+                  <h4>Wireless-Powered UAV-Assisted MEC: Joint Resource Allocation and Trajectory Optimization</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Zhenyu Na, Hanhan Ren, and Bin Lin</p>
+                  <p class="venue"><em>Proc. IEEE/CIC International Conference on Communications in China (ICCC)</em>, Dalian, China, pp. 1-6, 2023. <span class="muted">(Oral presentation)</span></p>
+                  <a class="doi" href="https://doi.org/10.1109/ICCC57788.2023.10233436" target="_blank" rel="noreferrer">DOI</a>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="pub-group" data-group="review">
+            <h3 class="pub-group-title">Manuscripts Under Review</h3>
+            <ol class="publication-list review-list">
+              <li class="publication" data-type="review">
+                <div class="pub-year">2026</div>
+                <div class="pub-body">
+                  <h4>Digital-Twin-Assisted Multi-Timescale AI Service Deployment and Inference Orchestration for Industrial Edge Networks</h4>
+                  <p class="authors"><strong>Yue Zhang</strong>, Ze Wei, Zhenyu Na, and Bin Lin</p>
+                  <p class="venue"><em>IEEE Transactions on Services Computing</em>, under review. Manuscript ID: TSC-2026-08-1174.</p>
+                </div>
+              </li>
+              <li class="publication" data-type="review">
+                <div class="pub-year">2026</div>
+                <div class="pub-body">
+                  <h4>Survivability-Oriented Task Offloading and Energy Scheduling for Tidal-Powered Island IoT</h4>
+                  <p class="authors">Ze Wei, <strong>Yue Zhang*</strong>, Rongxi He, and Bin Lin</p>
+                  <p class="venue"><em>IEEE Communications Letters</em>, under review. Manuscript ID: CL2026-2529.</p>
+                </div>
+              </li>
+              <li class="publication" data-type="review">
+                <div class="pub-year">2026</div>
+                <div class="pub-body">
+                  <h4>Forecast-Aided Resilience Scheduling for Tidal-Powered Consumer IoT With Energy-Aware Base-Station Edge Cooperation</h4>
+                  <p class="authors">Ze Wei, <strong>Yue Zhang*</strong>, Rongxi He, and Bin Lin</p>
+                  <p class="venue"><em>IEEE Transactions on Consumer Electronics</em>, under review. Manuscript ID: TCE-2026-07-3030.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="footnote">* Corresponding author.</p>
+          </div>
+        </section>
+
+        <section class="content-section" id="projects">
+          <div class="section-title-row">
+            <p class="section-index">04</p>
+            <h2>Research Projects</h2>
+          </div>
+          <div class="project-list">
+            <article class="project-card">
+              <div class="project-meta">National Natural Science Foundation of China · No. 61971081</div>
+              <h3>High-Altitude Platform Base Station Deployment for Wide-Area Emergency Communication</h3>
+              <p><strong>Role:</strong> Research Participant</p>
+            </article>
+            <article class="project-card">
+              <div class="project-meta">Natural Science Foundation of Liaoning Province · No. 2023-MS-124</div>
+              <h3>Efficient Multi-Domain UAV Deployment Optimization for 6G Aerial Networks</h3>
+              <p><strong>Role:</strong> Research Participant</p>
             </article>
           </div>
-          <p class="section-note">Add your full publication list, DOI links and PDFs directly in <code>index.html</code>. A ready-to-copy template is included in <code>EDIT-ME.md</code>.</p>
         </section>
 
-        <section class="section" id="experience">
-          <header class="section-heading">
-            <span class="eyebrow">Background</span>
-            <h2>Education & Experience</h2>
-          </header>
-          <div class="timeline-card">
+        <section class="content-section" id="experience">
+          <div class="section-title-row">
+            <p class="section-index">05</p>
+            <h2>Experience & Education</h2>
+          </div>
+          <div class="timeline">
             <div class="timeline-item">
-              <div class="timeline-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2M3 12h18"/></svg></div>
-              <div><span class="timeline-period">2026 – Present</span><h3>Lecturer</h3><p>School of Computer Science, Qufu Normal University</p></div>
+              <div class="timeline-date">2026.06 - Present</div>
+              <div><h3>Qufu Normal University</h3><p>Lecturer, School of Computer Science · Rizhao, China</p></div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5"/></svg></div>
-              <div><span class="timeline-period">Completed in 2025</span><h3>Ph.D. in Information and Communication Engineering</h3><p>Dalian Maritime University</p></div>
+              <div class="timeline-date">2021.09 - 2025.12</div>
+              <div><h3>Dalian Maritime University</h3><p>Ph.D. in Information and Communication Engineering · Supervisors: Prof. Zhenyu Na and Prof. Bin Lin</p></div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5"/></svg></div>
-              <div><h3>Master's Degree</h3><p>Tianjin University</p></div>
+              <div class="timeline-date">2018.09 - 2021.06</div>
+              <div><h3>Dalian University</h3><p>M.S. in Computer Technology · Dalian, China</p></div>
             </div>
             <div class="timeline-item">
-              <div class="timeline-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5"/></svg></div>
-              <div><h3>Bachelor's Degree in Automation</h3><p>Inner Mongolia University</p></div>
+              <div class="timeline-date">2012.09 - 2017.06</div>
+              <div><h3>Binzhou University</h3><p>B.S. in Computer Science and Technology · Binzhou, China</p></div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="service">
-          <header class="section-heading">
-            <span class="eyebrow">Academic Community</span>
-            <h2>Honors & Service</h2>
-          </header>
-          <div class="two-column-cards">
-            <div class="info-card">
-              <h3 class="info-heading">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="m8.5 12-1.5 9 5-3 5 3-1.5-9"/></svg>
-                Honors
-              </h3>
-              <p class="info-row"><span class="chev">›</span> Outstanding Graduate, Dalian Maritime University (2025)</p>
-              <p class="info-row"><span class="chev">›</span> Provincial-level awards in academic / innovation competitions</p>
+        <section class="content-section" id="service">
+          <div class="section-title-row">
+            <p class="section-index">06</p>
+            <h2>Honors & Academic Service</h2>
+          </div>
+          <div class="service-grid">
+            <div class="service-card">
+              <h3>Honor</h3>
+              <p>Outstanding Graduate of Dalian Maritime University, 2025.</p>
             </div>
-            <div class="info-card">
-              <h3 class="info-heading">
-                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/><path d="M8 7h8M8 11h6"/></svg>
-                Academic Service
-              </h3>
-              <p class="info-row"><span class="chev">›</span> Reviewer for IEEE Internet of Things Journal and other international journals</p>
+            <div class="service-card">
+              <h3>Professional Memberships</h3>
+              <p>Member of the China Computer Federation and the Chinese Institute of Electronics.</p>
+            </div>
+            <div class="service-card">
+              <h3>Editorial Service</h3>
+              <p>Part-time Academic Editor, <em>Radio Communications Technology</em>.</p>
+            </div>
+            <div class="service-card">
+              <h3>Peer Review</h3>
+              <p>Reviewer for <em>IEEE Internet of Things Journal</em> and <em>IEEE Transactions on Vehicular Technology</em>.</p>
             </div>
           </div>
         </section>
@@ -263,7 +433,10 @@
   </main>
 
   <footer>
-    <p>© <span id="currentYear"></span> Yue Zhang. Designed for GitHub Pages.</p>
+    <div class="section-shell footer-inner">
+      <p>© <span id="year"></span> Yue Zhang. Academic homepage.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
