@@ -1,29 +1,18 @@
-# Yue Zhang Academic Homepage (v2)
+# Yue Zhang Academic Homepage — Bilingual Version
 
-A static academic homepage designed for GitHub Pages.
+This package contains an English homepage and a Chinese mirror page with the same visual style.
 
-## Publish / update the live site
+## Structure
 
-Repository: `Leon1995-ai/Leon1995-ai.github.io`
+- `index.html` — English homepage (default)
+- `zh/index.html` — Chinese homepage
+- `academic-v4.1.css` — shared stylesheet
+- `academic-v4.1.js` — shared JavaScript
+- `assets/profile.jpg` — profile photo
+- `assets/Yue_Zhang_CV.pdf` — English CV
 
-1. Extract this ZIP locally.
-2. In the GitHub repository, upload/replace these files in the repository root:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-   - `.nojekyll`
-   - `assets/profile.jpg`
-   - `assets/Yue_Zhang_CV.pdf`
-3. Commit directly to `main`.
-4. Keep GitHub Pages configured as: `Deploy from a branch` → `main` → `/(root)`.
-5. Wait 1-3 minutes, then refresh `https://Leon1995-ai.github.io`.
+## Deploy
+Upload the entire contents of this folder to the root of `Leon1995-ai.github.io`. Keep GitHub Pages set to `main` + `/(root)`.
 
-## Content included
-
-- Modernized typography and academic visual style
-- Email / ORCID / IEEE Xplore / GitHub / CV links
-- 15 published papers listed (12 journal articles + 3 conference papers)
-- 3 manuscripts under review
-- 2 research projects
-- Education, appointment, honors, memberships and academic service
-- Publication filters (All / Journal / Conference / Under Review)
+English: https://Leon1995-ai.github.io/
+Chinese: https://Leon1995-ai.github.io/zh/
