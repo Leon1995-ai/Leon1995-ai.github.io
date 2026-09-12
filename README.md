@@ -52,3 +52,4 @@ EDIT-ME.md
 ## 本地预览
 
 直接双击 `index.html` 即可预览主要页面。也可以使用 VS Code 的 Live Server。
+Last updated: 2026-09-12
