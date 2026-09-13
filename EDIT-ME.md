@@ -1,14 +1,25 @@
-# Content notes for future updates
+# 后续更新内容
 
-## Keep these public-facing links current
-- ORCID: https://orcid.org/0000-0002-8263-3682
-- IEEE Xplore: https://ieeexplore.ieee.org/author/37089993164
-- DBLP: https://dblp.org/pid/47/722-70
+英文首页：index.html
+中文首页：zh/index.html
+英文论文列表：publications.html
+中文论文列表：zh/publications.html
+统一样式：academic-v7.css
+导航及论文分类交互：academic-v7.js
 
-## Publication policy used on this site
-- Published works: full bibliographic metadata and DOI when available.
-- Manuscripts: title, authors, target journal/status only; manuscript IDs are intentionally not public.
-- Yue Zhang is highlighted in author lists; † denotes corresponding author.
+研究主标签固定为：
+1. Integrated Space–Air–Ground–Sea Networks / 空天地海一体化网络
+2. Edge Computing & Resource Orchestration / 边缘计算与资源编排
+3. Digital Twin & Intelligent Network Orchestration / 数字孪生与智能网络编排
 
-## Important CV consistency note
-The public publication metadata used for the website was cross-checked against DBLP/publisher records where available. The current CV may still need a separate metadata pass before its next update.
+更新论文时：
+- 同步编辑中英文 publications.html。
+- 每篇论文的 paper-N 标识需要唯一。首页代表作的详情按钮链接到这些标识。
+- 更新论文分类按钮中的数量、页首数量，以及 academic-v7.js 内 resultLabels 的数量。
+- 论文录用后，将条目移到已发表分类，更新状态、年份、期刊信息和 DOI。
+- 已投稿件不计入已发表论文数量。
+- 首页三篇代表作单独展示；更换代表作时同步更新标题、作者、研究内容说明和详情链接。
+
+照片：替换 assets/profile.jpg。
+简历：替换 assets/Yue_Zhang_CV.pdf。
+请保持文件名一致，或者同时修改中英文页面中的引用路径。
