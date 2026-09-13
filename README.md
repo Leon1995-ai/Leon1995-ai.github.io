@@ -1,22 +1,23 @@
-# Yue Zhang Academic Homepage — Bilingual Version
+# Yue Zhang Academic Homepage — v5 Professional
 
-This package contains an English homepage and a Chinese mirror page with the same visual style.
+This version keeps the v4.2 visual design and refines the site for use as a professional academic social card.
 
-## Structure
+## Main changes
+- Rewritten English and Chinese profile text for a clearer research identity.
+- Academic links: Email, ORCID, IEEE Xplore, DBLP, CV.
+- Homepage metrics emphasize published and first-author work rather than submissions/projects.
+- Quick Facts replaced with Academic Service.
+- Research themes consolidated into four coherent directions.
+- Manuscript IDs removed from public-facing pages.
+- Published-paper metadata cleaned up; full author lists used where verified.
+- Social sharing metadata (Open Graph, canonical URL, structured data) improved.
 
-- `index.html` — English homepage (default)
-- `zh/index.html` — Chinese homepage
-- `academic-v4.1.css` — shared stylesheet
-- `academic-v4.1.js` — shared JavaScript
-- `assets/profile.jpg` — profile photo
-- `assets/Yue_Zhang_CV.pdf` — English CV
+## Upload to GitHub Pages
+Upload the following to the repository root:
+- `index.html`
+- `academic-v5.css`
+- `academic-v5.js`
+- `assets/`
+- `zh/`
 
-## Deploy
-Upload the entire contents of this folder to the root of `Leon1995-ai.github.io`. Keep GitHub Pages set to `main` + `/(root)`.
-
-English: https://Leon1995-ai.github.io/
-Chinese: https://Leon1995-ai.github.io/zh/
-
-
-## v4.2 typography tuning
-Slightly enlarged English body/publication metadata and separately tuned Chinese body/navigation/publication text for readability while preserving the v4.1 layout.
+Old CSS/JS files may remain; `index.html` and `zh/index.html` use v5 files.
