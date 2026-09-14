@@ -44,6 +44,27 @@
     revealLinkedPaper();
     window.addEventListener('hashchange', revealLinkedPaper);
   }
+  const homeSections = ['about', 'research', 'experience']
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+  const sectionLinks = Array.from(document.querySelectorAll('.desktop-nav a, .mobile-nav a'))
+    .filter(link => homeSections.some(section => link.getAttribute('href')?.endsWith(`#${section.id}`)));
+  function setActiveSection(id) {
+    sectionLinks.forEach(link => {
+      const active = link.getAttribute('href')?.endsWith(`#${id}`);
+      if (active) link.setAttribute('aria-current', 'location');
+      else if (link.getAttribute('aria-current') === 'location') link.removeAttribute('aria-current');
+    });
+  }
+  if (homeSections.length && sectionLinks.length && 'IntersectionObserver' in window) {
+    const visibleSections = new Map();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => visibleSections.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0));
+      const current = [...visibleSections.entries()].sort((a, b) => b[1] - a[1])[0];
+      if (current && current[1] > 0) setActiveSection(current[0]);
+    }, {rootMargin: '-22% 0px -58% 0px', threshold: [0, .15, .35, .6]});
+    homeSections.forEach(section => observer.observe(section));
+  }
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
